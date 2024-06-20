@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>商城</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/css2.css">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Cursor -->
+    <div class="cursor js-cursor"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <a class="logo" href="真正的index.html"> <img src="img/logo-light.png" class="logo-img" alt=""> </a>
+                <!-- <a class="logo" href="真正的index.html"> <h2>CARE<span>X</span></h2> </a> -->
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span> </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="真正的index.html" role="button" data-bs-auto-close="outside" aria-expanded="false">主页 </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#introduction">简介</a></li>
+                    <li class="nav-item dropdown"> <a class="nav-link" href="details.html?param=剪纸" role="button" data-bs-toggle="dropdown"data-bs-auto-close="outside" aria-expanded="false">图鉴<i class="ti-angle-down"></i> </a>
+                          <ul class="dropdown-menu">
+                              <li><a href="details.html?param=剪纸" class="dropdown-item"><span>剪纸</span></a></li>
+                              <li><a href="details.html?param=扎染" class="dropdown-item"><span>扎染 </span></a></li>
+                              <li><a href="details.html?param=漆扇" class="dropdown-item"><span>漆扇</span></a></li>
+                              <li><a href="details.html?param=纸伞" class="dropdown-item"><span>纸伞</span></a></li>
+                              <li><a href="details.html?param=竹编" class="dropdown-item"><span>竹编</span></a></li>
+                              <li><a href="details.html?param=纸鸢" class="dropdown-item"><span>纸鸢</span></a></li>
+                              <li><a href="details.html?param=香囊" class="dropdown-item"><span>香囊</span></a></li>
+                              </li>
+                          </ul>
+                      </li>
+                    </li>
+                    <li class="nav-item dropdown"> <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">资讯<i class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="post1.html" class="dropdown-item"><span>盛世华彩珐琅彩主题活动</span></a></li>
+                            <li><a href="post2.html" class="dropdown-item"><span>宁夏：漆艺魂国潮风 </span></a></li>
+                            <li><a href="post3.html" class="dropdown-item"><span>“中国伞王”迎来油纸伞新生</span></a></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link active dropdown-toggle" href="#store">商城</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="wrap">
+                        <div class="icon"> <i class="carex-phone-call"></i> </div>
+                        <div class="text">
+                            <p>咨询电话</p>
+                            <h5><a href="tel:6666666666">666 666 6666</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Banner -->
+    <section class="banner-header section-padding bg-img" data-overlay-dark="5" data-background="img/slider/2.jpg">
+        <div class="v-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mt-60">
+                        <h6>STORE</h6>
+                        <h1>周边商城</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+    <!-- Product list-->
+    <section class="page-title-banner productlist-body">
+        <div class="container">
+            <header>
+                <style>
+                    .white-title {
+                        color: rgb(255, 255, 255);
+                    }
+                </style>
+                <div class="content">
+                    <div class="title">
+                        <h2 class="white-title">产品列表</h2>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+    <!--Cart-->
+    <section class="cart-section cart-svg">
+        <div class="container">
+        <a href="javascript:void(0);" id="cartIcon" onclick="goToCartPage()">
+            <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+        </a>
+        </div>
+    </section>
+    <script>
+        function goToCartPage() {
+            window.location.href = "购物车.html";
+    }
+    </script>
+                    <!-- All Product Start -->
+                    <section class="all-product p-96">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <div class="mb-32">
+                                        <form action="商城.html" class="input-group search-bar">
+                                            <input type="text" placeholder="Search..." required="">
+                                            <button class="search-svg" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                              </svg></button>
+                                        </form>
+                                    </div>
+                                    <div class="categories-block mb-32">
+                                        <h2 class="h-27 bold light-black mb-16">
+                                            种类
+                                        </h2>
+                                        <ul class="categorie unstyled">
+                                            <li><a href="">非遗窗花</a></li>
+                                            <li><a href="">非遗灯笼</a></li>
+                                            <li><a href="">非遗珐琅</a></li>
+                                            <li><a href="">非遗漆扇</a></li>
+                                            <li><a href="">非遗香囊</a></li>
+                                            <li><a href="">非遗扎染</a></li>
+                                            <li><a href="">非遗纸鸢</a></li>
+                                            <li><a href="">非遗竹编</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="categories-block mb-32">
+                                        <h2 class="h-27 bold light-black mb-16">
+                                           年龄
+                                        </h2>
+                                        <ul class="categorie unstyled">
+                                            <li><a href="">5 - 12岁</a></li>
+                                            <li><a href="">12岁以上</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-9">
+                                    <div class="card mb-lg-0 mb-24">
+                                        <div class="card-header mb-0">
+                                            <ul class="nav nav-tabs card-header-tabs st-2 mb-32" data-bs-tabs="tabs">
+                                                <li class="nav-item">
+                                                    <a href="#all" class="active" aria-current="true" data-bs-toggle="tab">全部商品</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#top" aria-current="false" data-bs-toggle="tab">热销</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#sale" aria-current="false" data-bs-toggle="tab">有货</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#boy" aria-current="false" data-bs-toggle="tab">DIY材料包专区</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#girl" aria-current="false" data-bs-toggle="tab">成品专区</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <form class="card-body tab-content">
+                                            <div class="tab-pane active" id="all">
+                                                <div class="product">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec mb-32">
+                                                                <a href="商品详情.html">
+                                                                    <div class="img-block">
+                                                                        <img src="img/花草灯1.png" alt="">
+                                                                    </div>
+                                                                    <div class="content">
+                                                                        <div class="name-price">
+                                                                            <div class="product-name">
+                                                                                <h5>花草灯材料包</h5>
+                                                                            </div>
+                                                                            <div class="product-price">
+                                                                                <h5 class="bold">–
+                                                                                ￥25</h5>
+                                                                            </div>
+                                                                        </div></a>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/兔子花草灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>兔子花草灯</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥50</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/香囊.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>香囊成品</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥45</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card  mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/漆扇.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>漆扇(需备注)</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥30</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸伞.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸伞(定制)</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥100</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸鸢.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸鸢材料包</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥40</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/六角宫灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>六角宫灯</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥40</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card  mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/珐琅.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>珐琅</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥60</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/竹编扇子.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>竹编扇子</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥25</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="top">
+                                                <div class="product">
+                                                    <div class="row">
+
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/香囊2.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>端午香囊</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥50</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/荷花灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>荷花灯</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥50</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸鸢.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸鸢材料包</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥40</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸鸢2.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸鸢</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥60</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/竹编扇子.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>竹编扇材料</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥20</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/花草灯1.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>花草灯材料包</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥25</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/漆扇.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>漆扇(需备注)</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥30</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/月亮花草灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>月亮花草灯</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥40</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/窗花.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>窗花DIY</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥15</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="sale">
+                                                <div class="product">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/兔子花草灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>兔子花草灯</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥50</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/六角宫灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>六角宫灯</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥40</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/漆扇.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>漆扇</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥30</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/珐琅.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>珐琅</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥60</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/竹编扇子.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>竹编扇子</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥25</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸伞.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸伞(定制)</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥100</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸鸢.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸鸢材料包</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥40</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/香囊.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>香囊成品</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥45</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸鸢2.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸鸢</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥60</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="boy">
+                                                <div class="product">
+                                                    <div class="row">
+
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/花草灯1.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>花草灯材料包</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥25</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/竹编扇子.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>竹编扇材料</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥20</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸鸢.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸鸢材料包</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥40</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/窗花.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>窗花DIY</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥15</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/兔子花草灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>兔子灯材料包</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥35</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/月亮花草灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>月亮灯材料包</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥25</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/扎染丝巾.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>扎染丝巾DIY</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥50</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/香囊.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>香囊DIY</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥30</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/珐琅.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>珐琅DIY</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥30</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="girl">
+                                                <div class="product">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/香囊2.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>端午香囊</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥50</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸鸢2.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸鸢</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥60</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/漆扇.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>漆扇(需备注)</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥30</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/月亮花草灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>月亮灯</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥50</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/竹编扇子.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>竹编扇子</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥25</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/方形花草灯.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>方形花草灯</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥40</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/珐琅.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>珐琅</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥60</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/香囊.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>香囊成品</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥45</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="product-card sec-2 mb-32">
+                                                                <div class="img-block">
+                                                                    <img src="img/纸伞.png" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="name-price">
+                                                                        <div class="product-name">
+                                                                            <h5>纸扇(定制)</h5>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <h5 class="bold">–
+                                                                                ￥100</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="购物车.html" class="cus-btn primary">加入购物车</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                                                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                                              </svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="active">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="">3</a>
+                                        </li>
+                                        <li>
+                                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                              </svg></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- All Product End -->
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+
+    <!-- Footer -->
+    <footer class="footer clearfix">
+        <div class="container">
+            <!-- first footer -->
+            <div class="first-footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="links dark footer-contact-links">
+                            <div class="footer-contact-links-wrapper">
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="carex-phone-call"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>电话</h6>
+                                        <p>666 666 6666</p>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-links-divider"></div>
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="carex-email"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>邮箱</h6>
+                                        <p>hearit@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-links-divider"></div>
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="carex-location-map"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>地址</h6>
+                                        <p>北京市朝阳区定福庄东街1号</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second footer -->
+            <div class="second-footer">
+                <div class="row">
+                    <!-- about & social icons -->
+                    <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <div class="footer-logo"><img src="img/logo-light.png" alt=""></div>
+                            <!-- <div class="footer-logo"><h2>CARE<span>X</span></h2></div> -->
+                            <div class="widget-text">
+                                <p>面向大众的手工类非遗科普及DIY网站。</p>
+                                <div class="social-icons">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- quick links -->
+                    <div class="col-md-3 offset-md-1 widget-area">
+                        <div class="widget clearfix usful-links">
+                            <h3 class="widget-title">快速链接</h3>
+                            <ul>
+                                <li><a href="#introduction">简介</a></li>
+                                <li><a href="#illustrations">图鉴</a></li>
+                                <li><a href="#latestnews">资讯</a></li>
+                                <li><a href="#store">商城</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- subscribe -->
+                    <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <h3 class="widget-title">订阅</h3>
+                            <p>想要及时了解我们的服务吗？注册后我们将通过电子邮件发送通知给您。</p>
+                            <div class="widget-newsletter">
+                                <form action="#">
+                                    <input type="电子邮件" placeholder="填写电子邮件" required>
+                                    <button type="submit">提交</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom footer -->
+            <div class="bottom-footer-text">
+                <div class="row copyright">
+                    <div class="col-md-12">
+                        <p class="mb-0">&copy;2024 By <a href="http://www.bootstrapmb.com">bootstrapMB</a>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.4.1.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/before-after.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>文化瑰宝</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Cursor -->
+    <div class="cursor js-cursor"></div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"> <img src="img/logo-light.png" class="logo-img" alt=""> </a>
+                <!-- <a class="logo" href="index.html"> <h2>CARE<span>X</span></h2> </a> -->
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span> </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown"> <a class="nav-link"  href="真正的index.html">主页</i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#introduction">简介</a></li>
+                    <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="details.html?param=剪纸" role="button" data-bs-toggle="dropdown"data-bs-auto-close="outside" aria-expanded="false">图鉴<i class="ti-angle-down"></i> </a>
+                          <ul class="dropdown-menu">
+                              <li><a href="details.html?param=剪纸" class="dropdown-item"><span>剪纸</span></a></li>
+                              <li><a href="details.html?param=扎染" class="dropdown-item"><span>扎染 </span></a></li>
+                              <li><a href="details.html?param=漆扇" class="dropdown-item"><span>漆扇</span></a></li>
+                              <li><a href="details.html?param=纸伞" class="dropdown-item"><span>纸伞</span></a></li>
+                              <li><a href="details.html?param=竹编" class="dropdown-item"><span>竹编</span></a></li>
+                              <li><a href="details.html?param=纸鸢" class="dropdown-item"><span>纸鸢</span></a></li>
+                              <li><a href="details.html?param=香囊" class="dropdown-item"><span>香囊</span></a></li>
+                              </li>
+                          </ul>
+                      </li>
+                    </li>
+                    <li class="nav-item dropdown"> <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">资讯<i class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="post1.html" class="dropdown-item"><span>盛世华彩珐琅彩主题活动</span></a></li>
+                            <li><a href="post2.html" class="dropdown-item"><span>宁夏：漆艺魂国潮风 </span></a></li>
+                            <li><a href="post3.html" class="dropdown-item"><span>“中国伞王”迎来油纸伞新生</span></a></li>
+                        </li>
+                      </ul>
+                  </li>
+                    <li class="nav-item"><a class="nav-link" href="商城.html">商城</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="wrap">
+                        <div class="icon"> <i class="carex-phone-call"></i> </div>
+                        <div class="text">
+                            <p>咨询电话</p>
+                            <h5><a href="tel:6666666666">666 666 6666</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Banner -->
+    <section class="banner-header section-padding bg-img" data-overlay-dark="4" data-background="img/slider/10.jpg">
+        <div class="v-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt-60">
+                        <h6>文化瑰宝</h6>
+                        <h1 id="jianzhih" style="display: none;">剪纸艺术</h1>
+						<h1 id="zaranh" style="display: none;">扎染艺术</h1>
+						<h1 id="qishanh" style="display: none;">漆扇艺术</h1>
+						<h1 id="zhisanh" style="display: none;">纸伞艺术</h1>
+						<h1 id="zhubianh" style="display: none;">竹编艺术</h1>
+						<h1 id="falangh" style="display: none;">珐琅艺术</h1>
+						<h1 id="zhiyuanh" style="display: none;">纸鸢艺术</h1>
+						<h1 id="xiangnangh" style="display: none;">香囊艺术</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+    <!-- Team Single -->
+    <section class="team-single section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div id="jianzhiimg" style="display: none;" class="team-img mb-30">
+                        <div class="img"> <img src="img/非遗窗花.png" class="rounded-1" alt=""> </div>
+                    </div>
+					<div id="zaranimg" style="display: none;" class="team-img mb-30">
+					    <div class="img"> <img src="img/非遗扎染.png" class="rounded-1" alt=""> </div>
+					</div>
+					<div id="qishanimg" style="display: none;" class="team-img mb-30">
+					    <div class="img"> <img src="img/非遗漆扇.png" class="rounded-1" alt=""> </div>
+					</div>
+					<div id="zhisanimg" style="display: none;" class="team-img mb-30">
+					    <div class="img"> <img src="img/非遗纸伞.png" class="rounded-1" alt=""> </div>
+					</div>
+					<div id="zhubianimg" style="display: none;" class="team-img mb-30">
+					    <div class="img"> <img src="img/非遗竹编.png" class="rounded-1" alt=""> </div>
+					</div>
+					<div id="falangimg" style="display: none;" class="team-img mb-30">
+					    <div class="img"> <img src="img/非遗珐琅.png" class="rounded-1" alt=""> </div>
+					</div>
+					<div id="zhiyuanimg" style="display: none;" class="team-img mb-30">
+					    <div class="img"> <img src="img/非遗纸鸢.png" class="rounded-1" alt=""> </div>
+					</div>
+					<div id="xiangnangimg" style="display: none;" class="team-img mb-30">
+					    <div class="img"> <img src="img/非遗香囊.png" class="rounded-1" alt=""> </div>
+					</div>
+                </div>
+				<!-- 剪纸 -->
+                <div id="jainzhi" style="display: none;" class="col-md-6 offset-md-1 con">
+                    <h6>剪纸</h6>
+                    <p>中国剪纸是一种用剪刀或刻刀在纸上剪刻花纹，用于装点生活或配合其他民俗活动的民间艺术。在中国，剪纸具有广泛的群众基础，交融于各族人民的社会生活，是各种民俗活动的重要组成部分。其传承赓续的视觉形象和造型格式，蕴涵了丰富的文化历史信息，表达了广大民众的社会认知、
+					道德观念、实践经验、生活理想和审美情趣，具有认知、教化、表意、抒情、娱乐、交往等多重社会价值，2006年5月20日，剪纸艺术遗产经国务院批准列入第一批国家级非物质文化遗产名录。</p>
+                    <!-- tab -->
+                    <ul class="nav nav-tabs simpl-bord mt-60" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation"> <span class="nav-link active cursor-pointer" id="vision-tab" data-bs-toggle="tab" data-bs-target="#biographyzr">历史沿革</span> </li>
+                        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#educationzr">作品分类</span> </li>
+                        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#awardszr">用途形式</span> </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="biographyzr" role="tabpanel" aria-labelledby="vision-tab">
+                            <p>纸的发明是在公元前的西汉时代，在此之前是不可能有剪纸艺术的出现的，但当时人们运用薄片材料，通过镂空雕刻的技法制成工艺品，却早在未出现纸时就已流行，即以雕、镂、剔、刻、剪的技法在金箔、皮革、绢帛，甚至在树叶上剪刻纹样。
+							《史记》中的剪桐封弟记述了西周初期周成王用梧桐叶剪成“圭”赐其弟，封姬虞到唐为侯。战国时期就有用皮革镂花，（湖北江凌望山一号楚墓出土文物之一），银箔镂空刻花（河南辉县固围村战国遗址出土文物之一），都与剪纸同出一辙，他们的出现都为民间剪纸的形成奠定了一定的基础</p>
+                        </div>
+                        <div class="tab-pane fade" id="educationzr" role="tabpanel" aria-labelledby="mission-tab">
+                            <p>单色剪纸是剪纸中最基本的形式，由红色、绿色、褐色、黑色、金色等各种颜色剪成，主要用于窗花装饰和刺绣的底样。主要有阴刻、阳刻、阴阳结合三种表现手法。用于刺绣底样的剪纸，常用剪刺结合的手法。刺是以针尖在花纹的细部刺出小型圆点，在一些部位留出“暗刀”，可以作为刺绣时套针换线的依据。折叠剪纸、剪影、撕纸等都是单色剪纸的表现形式。</p>
+                        </div>
+                        <div class="tab-pane fade" id="awardszr" role="tabpanel" aria-labelledby="mission-tab">
+                            <p>一、张贴用，即直接张贴于门窗、墙壁、灯彩、彩扎之上以为装饰。如窗花、墙花、顶棚花、烟格子、灯笼花、纸扎花、门笺；</p>
+							<p>二、摆衬用，即用于点缀礼品、嫁妆、祭品、供品。如喜花、供花、礼花、烛台花、斗香花、重阳旗；</p>
+							<p>三、刺绣底样，用于衣饰、鞋帽、枕头。如鞋花、枕头花、帽花、围涎花、衣袖花、背带花；</p>
+							<p>四、印染用，即作为蓝印花布的印版，用于衣料，被面、门帘、包袱、围兜、头巾等。</p>
+                        </div>
+                    </div>
+                </div>
+				<!-- 扎染 -->
+				<div id="zaran" style="display: none;" class="col-md-6 offset-md-1 con">
+				    <h6>扎染</h6>
+				    <p>扎染古称扎缬、绞缬，古代常见的防染印花纺织品有绞缬、蜡缬和夹缬等种类。是汉族民间传统而独特的染色工艺。织物在染色时部分结扎起来使之不能着色的一种染色方法，中国传统的手工染色技术之一</p>
+				    <!-- tab -->
+				    <ul class="nav nav-tabs simpl-bord mt-60" id="myTab" role="tablist">
+				        <li class="nav-item" role="presentation"> <span class="nav-link active cursor-pointer" id="vision-tab" data-bs-toggle="tab" data-bs-target="#biography">起源</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#education">分类</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#awards">制作工艺</span> </li>
+				    </ul>
+				    <div class="tab-content" id="myTabContent">
+				        <div class="tab-pane fade show active" id="biography" role="tabpanel" aria-labelledby="vision-tab">
+				            <p>扎染有着悠久历史。起源于黄河流域。起源于何时尚无定论。据记载，早在东晋，扎结防染的绞缬绸已经有大批生产。公元408年东晋时期的作品，扎染这种工艺早在东晋时期就已经成熟了。当时绞缬产品，
+							有较简单的小簇花样，如蝴蝶、腊梅、海棠等；也有整幅图案花样，如白色小圆点的“鱼子缬”，圆点稍大的“玛瑙缬”，紫地白花斑酷似梅花鹿的“鹿胎缬”等。在南北朝时，扎染产品被广泛用于汉族妇女的衣着。
+							唐代是中国古代文化鼎盛时期，绞缬的纺织品甚为流行、更为普遍，“青碧缬衣裙”成为唐代时尚的基本式样。北宋时，绞缬产品在中原和北方地区流行甚广。</p>
+				        </div>
+				        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>据《实仪录》载：“汉年间有染缬色法，不知何人所造。”扎染—一代名染。首批国家级非物质文化遗产扩展项目。
+							自贡扎染包括“扎染、拔染、防染”，是自贡汉族传统的工艺美术品，以隽秀、清新、淳朴、富有民间特色而蜚声国内外。
+							扎染大师张宇仲和扎染工作者在发掘整理民族艺术遗产的基础上，吸收了国画、装饰画、油画及现代画派的手法，
+							形成了古朴、典雅、粗犷、动中求静、细腻恬适、抽象和具体巧妙结合的自贡扎染特色。
+							自贡扎染产品，除床单、窗帘、桌布、提包等各类生活用品外，还大量生产色调各异、图案新颖的花布、装饰壁挂。</p>
+				        </div>
+				        <div class="tab-pane fade" id="awards" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>扎染工艺分为扎结和染色两部分。它是通过纱、线、绳等工具，对织物进行扎、缝、缚、缀、夹等多种形式组合后进行染色
+							。其目的是对织物扎结部分起到防染作用，使被扎结部分保持原色，而未被扎结部分均匀受染。从而形成深浅不均、层次丰富的色晕和皱印。
+							织物被扎的愈紧、愈牢、防染效果愈好。它既可以染成带有规则纹样的普通扎染织物；又可以染出表现具象图案的复杂构图及多种绚丽色彩的精美工艺品，
+							稚拙古朴，新颖别致。扎染以蓝白二色为主调所构成的宁静平和世界，即用青白二色的对比来营造出古朴的意蕴，
+							且青白二色的结合往往给人以“青花瓷”般的淡雅之感，而平和与宽容更体现在扎染的天空中</p>
+				        </div>
+				    </div>
+				</div>
+				<!-- 漆扇 -->
+				<div id="qishan" style="display: none;" class="col-md-6 offset-md-1 con">
+				    <h6>漆扇</h6>
+				    <p>流云变幻的中式美学漆扇是以扇子为载体，运用漆器工艺制作而成的艺术品，展现了中国传统文化的瑰丽和精致。对中国文人来说，
+					折扇是一种身份的象征，又寄寓着个人的文化趣味。漆艺扇子，以漆为纸以扇为画，精湛工艺技巧、独特造型设计、丰富主题题材，
+					演绎中国传统美学，流云变幻，尽显诗情画意之感，尊贵大气风范，具有珍贵的收藏价值。</p>
+				    <!-- tab -->
+				    <ul class="nav nav-tabs simpl-bord mt-60" id="myTab" role="tablist">
+				        <li class="nav-item" role="presentation"> <span class="nav-link active cursor-pointer" id="vision-tab" data-bs-toggle="tab" data-bs-target="#biographyqs">漆伞制作工艺</span> </li>
+				    </ul>
+				    <div class="tab-content" id="myTabContent">
+				        <div class="tab-pane fade show active" id="biographyqs" role="tabpanel" aria-labelledby="vision-tab">
+				            <p>使用优质木材，如榆木、槭木等，根据扇子形状和尺寸，制作骨骼，通常使用竹子或者薄而坚韧的木条。</p>
+							<p>将底漆涂刷在扇骨上，底漆通常是黑色或红色的漆料，以增加扇子的质感和耐久性</p>
+							<p>根据不同主题和图案进行，常见有山水、花鸟、人物等。彩绘要求细腻，需经过多次涂刷和烘干，才能达到最效果。</p>
+				        </div>
+				    </div>
+				</div>
+				<!-- 纸伞 -->
+				<div id="zhisan" style="display: none;" class="col-md-6 offset-md-1 con">
+				    <h6>纸伞</h6>
+				    <p>油纸伞是汉族 [1]古老的传统用品之一，亦传至亚洲各地如朝鲜、越南、泰国、日本等地，并在各地发展出当地特色。
+					受中国影响，日本、琉球古代婚礼上也有用到油纸伞。老人喜好象征长寿的紫色伞，送葬时则要用白色伞。
+					宗教庆典中，也常看到将油纸伞作为遮蔽物撑在神轿上，此是取其圆满的意思，作为人们遮日避雨、驱恶避邪的象征</p>
+				    <!-- tab -->
+				    <ul class="nav nav-tabs simpl-bord mt-60" id="myTab" role="tablist">
+				        <li class="nav-item" role="presentation"> <span class="nav-link active cursor-pointer" id="vision-tab" data-bs-toggle="tab" data-bs-target="#biographyyzs">历史沿革</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#educationyzs">主要用途</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#awardsyzs">内涵寓意</span> </li>
+				    </ul>
+				    <div class="tab-content" id="myTabContent">
+				        <div class="tab-pane fade show active" id="biographyyzs" role="tabpanel" aria-labelledby="vision-tab">
+				            <p>油纸伞是汉族传统用品之一，使用历史已有1000多年。以手工削制的竹条做伞架，以涂刷天然防水桐油的皮棉纸做伞面。
+							油纸伞是世界上最早的雨伞，纯手工制成，全部取材于天然，是中国古人智慧的结晶
+							经常使用的尼龙钢架伞是19世纪英国人根据中国油纸伞的开合原理，使用现代材料，工业化生产改进而来，
+							虽然方便携带、价格低廉，但没有传统油纸伞那种雅致天成的美感。</p>
+				        </div>
+				        <div class="tab-pane fade" id="educationyzs" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>作为经久耐用的中国传统雨具，油纸伞在我国使用历史已经1000多年。实际上，油纸伞是很好用的雨伞，相比尼龙钢架伞（洋伞），
+							油纸伞更加经久耐用，也更加抗风。只是在存放方面有需要注意的地方，例如不要放在过于干燥的地方等。另外，在北方干燥地区，
+							油纸伞不适合长期暴晒。油纸伞雅致天成的美感，是尼龙钢架伞这种工业品永远无法比拟的。油纸伞除了是挡阳遮雨的日常用品外，
+							也是嫁娶婚俗礼仪一项不可或缺的物品，中国传统婚礼上，新娘出嫁下轿时，喜娘会用红色油纸伞遮著新娘以作避邪</p>
+				        </div>
+				        <div class="tab-pane fade" id="awardsyzs" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>代表多子、多福 油纸与“有子”音近；伞架为“人”字形（由几十个人字形状组成）；伞字繁体是“傘”，从繁体字角度看，是人字头下面四个“人”字,自古寓意为五子登科。</p>
+							<p>寓意节节高升 伞骨为竹，竹报平安，寓意节节高升。</p>
+							<p>寓意美满、团圆、平安 伞形为圆，寓意美满、团圆、平安。</p>
+							<p>代表恩爱百年 自古油纸伞下演绎了多少经典爱情：《白蛇传》中，许仙与白蛇在西湖断桥以红伞为媒，同伞风雨，
+							结下千古奇缘的佳话，戴望舒《雨巷》，描绘了“古镇+雨巷+油纸伞+美女”美好浪漫的景象，油纸伞早已成为浪漫古典爱情的符号。</p>
+				        </div>
+				    </div>
+				</div>
+				<!-- 竹编 -->
+				<div id="zhubian" style="display: none;" class="col-md-6 offset-md-1 con">
+				    <h6>竹编</h6>
+				    <p>传统竹编工艺有着悠久的历史，富含着中华民族劳动人民辛勤劳作的结晶，竹编工艺品分为细丝工艺品和粗丝竹编工艺品。
+					2008年6月7日，竹编经国务院批准列入第二批国家级非物质文化遗产名录</p>
+				    <!-- tab -->
+				    <ul class="nav nav-tabs simpl-bord mt-60" id="myTab" role="tablist">
+				        <li class="nav-item" role="presentation"> <span class="nav-link active cursor-pointer" id="vision-tab" data-bs-toggle="tab" data-bs-target="#biographyzb">历史源流</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#educationzb">制作流程</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#awardszb">主要特点</span> </li>
+				    </ul>
+				    <div class="tab-content" id="myTabContent">
+				        <div class="tab-pane fade show active" id="biographyzb" role="tabpanel" aria-labelledby="vision-tab">
+				            <p>据考古资料证明，人类开始定居生活后，便从事简单的农业和畜牧业生产，所获的米粟和猎取的食物稍有剩余，
+							为了不时之需，就把食物及饮水存放起来。这时候便就地取材，使用各种石斧、石刀等工具砍来植物的枝条编成篮、筐等器皿。
+							在实践中，发现竹子干脆利落，开裂性强，富有弹性和韧性，而且能编易织，坚固耐用。于是，竹子便成了当时器皿编制的主要材料</p>
+				        </div>
+				        <div class="tab-pane fade" id="educationzb" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>竹编工艺大体可分起底、编织、锁口三道工序。在编织过程中，以经纬编织法为主。在经纬编织的基础上，还可以穿插各种技法，
+							如：疏编、插、穿、削、锁、钉、扎、套等， 使编出的图案花色变化多样。需要配以其它色彩的制品就用染色的竹片或竹丝互相插扭，
+							形成各种色彩对比强烈、鲜艳明快的花纹。</p>
+				        </div>
+				        <div class="tab-pane fade" id="awardszb" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>竹编所用竹丝断面全为矩形，在厚薄粗细上都有严格要求，厚度仅为一两根头发丝厚，宽度也只有四五根发丝宽，根根竹丝都通过匀刀，
+							达到厚薄均匀，粗细一致，观者无不赞叹其难。传统竹编工艺有着悠久的历史，富含着劳动人民辛勤劳作的结晶，
+							竹编工艺品分为细丝工艺品和粗丝竹编工艺品。在传统技艺街区展出了不同风格的竹编作品，既有历史悠久，技艺高超的青神竹编，
+							又有将现代流行时尚与中国传统文化工艺相结合的刘氏竹编，博采众长</p>
+				        </div>
+				    </div>
+				</div>
+				<!-- 珐琅 -->
+				<div id="falang" style="display: none;" class="col-md-6 offset-md-1 con">
+				    <h6>珐琅</h6>
+				    <p>又称搪瓷，读音为táng cí，是将无机玻璃质材料通过熔融凝于基体金属上并与金属牢固结合在一起的一种复合材料</p>
+				    <!-- tab -->
+				    <ul class="nav nav-tabs simpl-bord mt-60" id="myTab" role="tablist">
+				        <li class="nav-item" role="presentation"> <span class="nav-link active cursor-pointer" id="vision-tab" data-bs-toggle="tab" data-bs-target="#biographyfl">历史发展</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#educationfl">优势特点</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#awardsfl">工艺流程</span> </li>
+				    </ul>
+				    <div class="tab-content" id="myTabContent">
+				        <div class="tab-pane fade show active" id="biographyfl" role="tabpanel" aria-labelledby="vision-tab">
+				            <p>搪瓷起源于玻璃装饰金属。古埃及最早出现，其次是希腊。6世纪欧洲嵌丝珐琅、剔花珐琅、浮雕珐琅、透光珐琅、画珐琅相继问世。8世纪中国开始发展珐琅，到14世纪末珐琅技艺日趋成熟，
+							15世纪中期明代景泰年间的制品尤为著称，故有景泰蓝之称。19世纪初，欧洲研制出铸铁搪瓷，为搪瓷由工艺品走向日用品奠定了基础，
+							但由于当时铸造技术落后，铸铁搪瓷应用受到限制。19世纪中，各类工业的发展，促使钢板搪瓷兴起，开创了现代搪瓷的新纪元。
+							19世纪末～20世纪上半叶，各种不同性能瓷釉的问世，钢板及其他金属材料的推广运用，耐火材料、窑炉、涂搪技术的不断更新，加快了搪瓷工业的发展</p>
+				        </div>
+				        <div class="tab-pane fade" id="educationfl" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>搪瓷是涂烧在金属底坯表面上的无机玻璃瓷釉。在金属表面进行瓷釉涂搪可以防止金属生锈，使金属在受热时不至于在表面形成氧化层并且能抵抗各种液体的侵蚀。搪瓷制品不仅安全无毒，
+							易于洗涤洁净，可以广泛地用作日常生活中使用的饮食器具和洗涤用具，而且在特定的条件下，瓷釉涂搪在金属坯体上表现出的
+							硬度高、耐高温、耐磨以及绝缘作用等优良性能，使搪瓷制品有了更加广泛的用途。瓷釉层还可以赋予制品以美丽的外表，装点人们的生活。
+							可见搪瓷制品兼备了金属的强度和瓷釉华丽的外表以及耐化学侵蚀的性能</p>
+				        </div>
+				        <div class="tab-pane fade" id="awardsfl" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>搪瓷生产主要有釉料制备、坯体制备、涂搪、干燥、烧成、检验等工序。对于艺术搪瓷、日用搪瓷、卫生搪瓷、建筑搪瓷等，
+							为了外观装饰和使用的需要，还需经过彩饰和装配。工业搪瓷设备则需经检测后再进行组装</p>
+				        </div>
+				    </div>
+				</div>
+				<!-- 纸鸢 -->
+				<div id="zhiyuan" style="display: none;" class="col-md-6 offset-md-1 con">
+				    <h6>纸鸢</h6>
+				    <p>风筝由中国古代劳动人民发明于东周春秋时期，距今已2000多年。相传墨翟以木头制成木鸟，研制三年而成，是人类最早的风筝起源。后来鲁班用竹子，
+					改进墨翟的风筝材质，直至东汉期间，蔡伦改进造纸术后，坊间才开始以纸做风筝，称为“纸鸢”。到南北朝时，风筝开始成为传递信息的工具；
+					从隋唐开始，由于造纸业的发达，民间开始用纸来裱糊风筝；到了宋代的时候，放风筝成为人们喜爱的户外活动</p>
+				    <!-- tab -->
+				    <ul class="nav nav-tabs simpl-bord mt-60" id="myTab" role="tablist">
+				        <li class="nav-item" role="presentation"> <span class="nav-link active cursor-pointer" id="vision-tab" data-bs-toggle="tab" data-bs-target="#biographyzy">发展历史</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#educationzy">文化</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#awardszy">相关传说</span> </li>
+				    </ul>
+				    <div class="tab-content" id="myTabContent">
+				        <div class="tab-pane fade show active" id="biographyzy" role="tabpanel" aria-labelledby="vision-tab">
+				            <p>关于风筝的起源，大体有三种传说，斗笠、树叶、和帆。传说中第一个风筝为“鲁班”制作，称之为“木鸢”，《渚宫旧事》记载鲁班“尝为木鸢，乘之以窥宋城”。
+							而以《吕氏春秋·爱类》记载：“公输班为高云梯，欲以攻宋。墨子闻之，自鲁往，裂裳裹足，日夜不休，十日十夜而至于郢，见荆王曰：‘臣北方之鄙人也，
+							闻大王将攻宋，信有之乎’”说明鲁班当时造的是“高云梯”而不是木鸢</p>
+				        </div>
+				        <div class="tab-pane fade" id="educationzy" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>中国的风筝已有二千多年的历史。从传统的中国风筝上到处可见吉祥寓意和吉祥图案的影子。在漫长的岁月里，
+							我们的祖先不仅创造出优美的凝聚着中华民族智慧的文字和绘画，还创造了许多反映人们对美好生活向往和追求、寓意吉祥的图案。
+							它通过图案形象，给人以喜庆、吉祥如意和祝福之意；它融合了群众的欣赏习惯，反映人们善良健康的思想感情，渗透着中国民族传统和民间习俗，
+							因而在民间广泛流传，为人们喜闻乐见。有着二千多年历史的风筝，一直融入在中国传统文化之中，受其熏陶，在传统的中国风筝中，
+							随处可见这种吉祥寓意之处：“福寿双全”“龙凤呈祥”“百蝶闹春”“鲤鱼跳龙门”“麻姑献寿”“百鸟朝凤”“连年有鱼”“四季平安”等
+							这些风筝无一不表现着人们对美好生活的向往和憧憬。</p>
+				        </div>
+				        <div class="tab-pane fade" id="awardszy" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>关于风筝的起源，大体有四种传说。一是斗笠、树叶说；二是帆船、帐篷说；三是飞鸟说；四是李邺zy但就风筝起源于中国的结论，则是世界一致公认的。</p>
+				        </div>
+				    </div>
+				</div>
+				<!-- 香囊 -->
+				<div id="xiangnang" style="display: none;" class="col-md-6 offset-md-1 con">
+				    <h6>香囊</h6>
+				    <p>香包又叫容臭、香袋、香囊、香缨、佩帏，今人称荷包、耍货子、绌绌。它是古代中国劳动妇女创造的一种民间刺绣工艺品。
+					是以男耕女织为标志的古代中国农耕文化的产物，是传承千年而余绪未泯的中国传统文化的遗存和再生。
+					香包最早称容臭，屈原《离骚》中有“扈江篱与辟芷兮，纫秋兰以为佩”，当时的香料是辟芷、秋兰。在明朝仍有容臭的称呼。
+					中国传统的香囊多用绸布制成，内装雄黄、熏草、艾叶等香料。一说香包可以避邪，端午节时多会配挂香包</p>
+				    <!-- tab -->
+				    <ul class="nav nav-tabs simpl-bord mt-60" id="myTab" role="tablist">
+				        <li class="nav-item" role="presentation"> <span class="nav-link active cursor-pointer" id="vision-tab" data-bs-toggle="tab" data-bs-target="#biographyxn">历史源流</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#educationxn">文化习俗</span> </li>
+				        <li class="nav-item" role="presentation"> <span class="nav-link cursor-pointer" id="mission-tab" data-bs-toggle="tab" data-bs-target="#awardsxn">制作过程</span> </li>
+				    </ul>
+				    <div class="tab-content" id="myTabContent">
+				        <div class="tab-pane fade show active" id="biographyxn" role="tabpanel" aria-labelledby="vision-tab">
+				            <p>香包(sachet)，古代称“香囊”，亦称“佩帷”、“容臭”、“香袋儿”、“荷包”，庆阳俗称“绌绌”或“耍活”。它是用彩色丝线在彩绸上绣制出各种
+							内涵古老神奇、博大精深的图案纹饰，缝制成形状各异、大小不等的小绣囊，内装用多种浓烈芳香气味的中草药研制的细末，
+							以作节令志庆、生活实用和观赏品玩用。</p>
+				        </div>
+				        <div class="tab-pane fade" id="educationxn" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>祛邪祈福，是香包文化的永久主题。而隐喻象征、托物言志则是香包的鲜明艺术特色。庆阳香包的图案和造型非常考究，
+							具有丰富的意蕴：老虎狮子象征勇猛威武，祛除邪恶保平安；双鱼、双蝶、蛟龙等象征两性相爱、交合、生育；莲花、荷花、牡丹、梅花等喻意女性的坚贞甜美；
+							用登梅的喜鹊、采花的蜜蜂隐喻男性；借葫芦、石榴多籽，盼望多子多福；借大枣、花生、桂圆、莲子之名，取其谐音，寓早（枣）生贵（桂）子；
+							送给长寿老人的“耄耋童趣”，以猫和蝴蝶戏牡丹组合图案，喻意老年生活富有情趣；
+							送给小孩的“福寿娃娃”，以憨态十足的娃娃为主体，周围环绕蝙蝠、桃子组图，盼望孩子健康平安</p>
+				        </div>
+				        <div class="tab-pane fade" id="awardsxn" role="tabpanel" aria-labelledby="mission-tab">
+				            <p>对针法、材料、工具都有一番了解之后，就可以开始制作香包了。首先示范基本型的香包制作。
+							布料以前香包的制作，大都采用做衣服剩下来的零头布，都采用比较好的布料，当然主要的选择是在于布料的质感，对于体材合适的程度。
+							线是各色的绣线，既可以拿来缝合，又可以绣成各式各样的图案。又有两种，一种是丝线，一种是绵线。香末就比较复杂，因为配料不同
+							，所研出来的香末味道自然就不同，配料包括艾草末、雄黄粉、檀香粉、香粉等等。棉花是用来做香包内部的填充物，因为棉花本身轻柔而且可以久存不坏</p>
+				        </div>
+				    </div>
+				</div>
+            </div>
+        </div>
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+    <!-- Footer -->
+    <footer class="footer clearfix">
+        <div class="container">
+            <!-- first footer -->
+            <div class="first-footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="links dark footer-contact-links">
+                            <div class="footer-contact-links-wrapper">
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="carex-phone-call"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>电话</h6>
+                                        <p>666 666 6666</p>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-links-divider"></div>
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="carex-email"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>邮箱</h6>
+                                        <p>hearit@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-links-divider"></div>
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="carex-location-map"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>地址</h6>
+                                        <p>北京市朝阳区定福庄东街1号</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second footer -->
+            <div class="second-footer">
+                <div class="row">
+                    <!-- about & social icons -->
+                    <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <div class="footer-logo"><img src="img/logo-light.png" alt=""></div>
+                            <!-- <div class="footer-logo"><h2>CARE<span>X</span></h2></div> -->
+                            <div class="widget-text">
+                                <p>面向大众的手工类非遗科普及DIY网站。</p>
+                                <div class="social-icons">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- quick links -->
+                    <div class="col-md-3 offset-md-1 widget-area">
+                        <div class="widget clearfix usful-links">
+                            <h3 class="widget-title">快速链接</h3>
+                            <ul>
+                                <li><a href="#introduction">简介</a></li>
+                                <li><a href="#illustrations">图鉴</a></li>
+                                <li><a href="#latestnews">资讯</a></li>
+                                <li><a href="#store">商城</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- subscribe -->
+                    <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <h3 class="widget-title">订阅</h3>
+                            <p>想要及时了解我们的服务吗？注册后我们将通过电子邮件发送通知给您。</p>
+                            <div class="widget-newsletter">
+                                <form action="#">
+                                    <input type="电子邮件" placeholder="填写电子邮件" required>
+                                    <button type="submit">提交</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom footer -->
+            <div class="bottom-footer-text">
+                <div class="row copyright">
+                    <div class="col-md-12">
+                        <p class="mb-0">&copy;2024 By <a href="http://www.bootstrapmb.com">bootstrapMB</a>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.4.1.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/before-after.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+		function getQueryParam(name) {
+		    let regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`),
+		        results = regex.exec(window.location.href);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		}
+
+		// 使用这个函数来获取 'param' 的值
+		let paramValue = getQueryParam('param');
+		// 根据 paramValue 显示不同的内容
+		if (paramValue === '剪纸') {
+			document.getElementById('jainzhi').style.display = 'block';
+			document.getElementById('jianzhih').style.display = 'block';
+			document.getElementById('jianzhiimg').style.display = 'block';
+		} else if (paramValue === '扎染') {
+			document.getElementById('zaran').style.display = 'block';
+			document.getElementById('zaranh').style.display = 'block';
+			document.getElementById('zaranimg').style.display = 'block';
+		} else if (paramValue === '漆扇'){
+			document.getElementById('qishan').style.display = 'block';
+			document.getElementById('qishanh').style.display = 'block';
+			document.getElementById('qishanimg').style.display = 'block';
+		} else if (paramValue === '纸伞'){
+			document.getElementById('zhisan').style.display = 'block';
+			document.getElementById('zhisanh').style.display = 'block';
+			document.getElementById('zhisanimg').style.display = 'block';
+		} else if (paramValue === '竹编'){
+			document.getElementById('zhubian').style.display = 'block';
+			document.getElementById('zhubianh').style.display = 'block';
+			document.getElementById('zhubianimg').style.display = 'block';
+		} else if (paramValue === '珐琅'){
+			document.getElementById('falang').style.display = 'block';
+			document.getElementById('falangh').style.display = 'block';
+			document.getElementById('falangimg').style.display = 'block';
+		} else if (paramValue === '纸鸢'){
+			document.getElementById('zhiyuan').style.display = 'block';
+			document.getElementById('zhiyuanh').style.display = 'block';
+			document.getElementById('zhiyuanimg').style.display = 'block';
+		} else if (paramValue === '香囊'){
+			document.getElementById('xiangnang').style.display = 'block';
+			document.getElementById('xiangnangh').style.display = 'block';
+			document.getElementById('xiangnangimg').style.display = 'block';
+		}
+	</script>
+</body>
+</html>
