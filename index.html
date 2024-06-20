@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>HEARIT心承</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+      #map {
+        border: 8px solid #fff;
+        width: 60%;
+        height: 60vh;
+        width:90vh;
+        margin: 20px auto;
+      }
+      .leaflet-popup-content {
+        text-align: center;
+        font-weight: bold;
+      }
+      .hhhcenter {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Cursor -->
+    <div class="cursor js-cursor"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"> <img src="img/logo-light.png" class="logo-img" alt=""> </a>
+                <!-- <a class="logo" href="index.html"> <h2>CARE<span>X</span></h2> </a> -->
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span> </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="真正的index.html" role="button" data-bs-auto-close="outside" aria-expanded="false">主页 </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#introduction">简介</a></li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#illustrations" role="button" data-bs-auto-close="outside" aria-expanded="false">图鉴 </a>
+                    </li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#latestnews" role="button" data-bs-auto-close="outside" aria-expanded="false">资讯 </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#store">商城</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="wrap">
+                        <div class="icon"> <i class="carex-phone-call"></i> </div>
+                        <div class="text">
+                            <p>咨询电话</p>
+                            <h5><a href="tel:6666666666">666 666 6666</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Slider -->
+    <header class="header slider-fade">
+        <div class="owl-carousel owl-theme">
+            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+            <div class="text-left item bg-img" data-overlay-dark="4" data-background="img/slider/壁纸.png">
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h6>welcome to <span>Hearit心承</span></h6>
+                                <h1>面向大众的<span>  </span>手工类非遗科普及DIY网站</h1>
+                                <a href="#0" class="button-1 mt-15">即刻订阅 <span class="ti-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-left item bg-img" data-overlay-dark="4" data-background="img/slider/花纹.jpg">
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h6>welcome to <span>Hearit心承</span></h6>
+                                <h1>提供详实的非遗手工文化科普内容及制作教程</h1>
+                                <a href="#0" class="button-1 mt-15">即刻订阅 <span class="ti-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-left item bg-img" data-overlay-dark="4" data-background="img/slider/花纹.png">
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-end">
+                                <h6>welcome to <span>Hearit心承</span></h6>
+                                <h1>提供最新线下沙龙资讯</h1>
+                                <a href="#0" class="button-1 mt-15">即刻订阅 <span class="ti-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+    <!-- About -->
+    <section id="introduction" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 valign animate-box" data-animate-effect="fadeInLeft">
+                    <div class="about-two-img full-width mb-30">
+                        <div class="img1 img-grayscale"> <img src="img/slider/祥云.jpg" class="rounded-1" alt=""> </div>
+                        <div class="img2 img-grayscale"> <img src="img/slider/花纹2.jpg" class="rounded-1" alt="">
+                            <div class="play-button">
+                                <a href="https://www.youtube.com/watch?v=aZ_xZ5ypNjs&list=PLsZ0hIBHaJ3NDanet6ukxniHTvzKyIV5N" class="btn vid">
+                                    <svg width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                        <circle class="circle" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none" />
+                                    </svg> <i class="ti-control-play"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1 animate-box" data-animate-effect="fadeInRight">
+                    <div class="section-title2">About</div>
+                    <div class="section-title"><span> HEARIT =</span> Herit With Heart</div>
+                    <p class="mb-30">欢迎来到「HEARIT心承」。我们致力于传承和推广中国非物质文化遗产的手工艺术，提供详实的非遗手工文化科普内容，包括非遗漆扇、非遗制香、非遗点茶、非遗珐琅等传统工艺。网站还提供清晰易懂的非遗手工DIY教程，让您可以亲身体验非遗技艺的乐趣。我们提供最新的线下非遗沙龙活动资讯，为爱好者提供交流和学习的平台。同时，我们的非遗手工文创商城中展示了丰富多样的手工艺品及DIY材料，支持非遗文化的传承与创新。加入我们，步入传统非遗工艺的美妙世界…</p>
+                    <ul class="list-unstyled list mb-30">
+                        <li>
+                            <div class="list-icon"> <span class="ti-check"></span> </div>
+                            <div class="list-text">
+                                <p>手工非遗知识科普</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"> <span class="ti-check"></span> </div>
+                            <div class="list-text">
+                                <p>线下沙龙咨询</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"> <span class="ti-check"></span> </div>
+                            <div class="list-text">
+                                <p>手工非遗DIY材料</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <p>  </p>
+         <br>
+         <p> </p>
+        <h5>国家级非遗代表性项目六大地区分布</h5>
+        <div id="chart2"></div>
+        <script type="text/javascript">
+          var chart2 = c3.generate({
+            bindto: '#chart2',
+            data: {
+              columns: [
+                ['民间文学', 32, 9, 73, 52, 12, 43],
+                ['传统音乐', 73, 26, 88, 90, 44, 73],
+                ['传统舞蹈', 40, 16, 73, 79, 77, 43],
+                ['传统戏剧', 88, 16, 153, 120, 104, 33],
+                ['曲艺', 40, 25, 71, 32, 54, 25],
+                ['传统体育、游艺与杂技', 59, 8, 45, 24, 18, 15],
+                ['传统美术', 64, 22, 138, 80, 13, 45],
+                ['传统技艺', 120, 16, 209, 81, 62, 67],
+                ['传统医药', 36, 7, 45, 29, 118, 21],
+                ['民俗', 65, 28, 117, 101, 31, 65],
+              ],
+              type: 'bar',
+              colors: {
+                '民间文学': '#FF8C75',
+                '传统音乐': '#FF704D',
+                '传统舞蹈': '#FF8566',
+                '传统戏剧': '#FF5C33',
+                '曲艺': '#FF3300',
+                '传统体育、游艺与杂技': '#CC2900',
+                '传统美术': '#FF9980',
+                '传统技艺': '#FFBFA6',
+                '传统医药': '#FFD9BF',
+                '民俗': '#FFB3A6'
+              }
+            },
+            axis: {
+              x: {
+                type: 'category',
+                categories: ['北方地区', '东北地区', '华北地区', '华东地区', '华中地区', '华南地区'],
+                tick: {
+                  rotate: 45,
+                  multiline: false
+                }
+              }
+            }
+          });
+        </script>
+         <br>
+         <p>  </p>
+          <br>
+          <p> </p>
+         <h5>国家级非遗代表性项目各省数量</h5>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+  var map = L.map('map', {
+      center: [35, 105],
+      zoom: 3.5,
+      scrollWheelZoom: false // 禁止地图缩放
+    });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var provincesData = [
+      { name: "北京", location: [39.9042, 116.4074], data: "120个" },
+      { name: "天津", location: [39.127, 117.227], data: "147个" },
+      { name: "河北", location: [38.0455, 114.4994], data: "162个" },
+      { name: "山西", location: [37.8664, 112.5485], data: "182个" },
+      { name: "内蒙古", location: [40.8174, 111.7656], data: "106个" },
+      { name: "辽宁", location: [41.8781, 123.1462], data: "76个" },
+      { name: "吉林", location: [43.8379, 126.5493], data: "55个" },
+      { name: "黑龙江", location: [45.75, 126.645], data: "42个" },
+      { name: "上海", location: [31.2304, 121.4737], data: "76个" },
+      { name: "江苏", location: [32.9711, 119.455], data: "161个" },
+      { name: "浙江", location: [30.26, 120.19], data: "257个" },
+      { name: "安徽", location: [31.8257, 117.2264], data: "99个" },
+      { name: "福建", location: [26.0789, 119.3021], data: "145个" },
+      { name: "江西", location: [28.6765, 115.909], data: "88个" },
+      { name: "山东", location: [36.3427, 118.1498], data: "186个" },
+      { name: "河南", location: [34.807, 113.796], data: "125个" },
+      { name: "湖北", location: [30.9756, 112.2707], data: "145个" },
+      { name: "湖南", location: [28.1128, 113.0029], data: "137个" },
+      { name: "广东", location: [23.3417, 113.4244], data: "165个" },
+      { name: "广西", location: [22.8152, 108.327], data: "70个" },
+      { name: "海南", location: [20.0169, 110.3497], data: "44个" },
+      { name: "重庆", location: [29.5647, 106.55], data: "53个" },
+      { name: "四川", location: [30.5728, 104.0668], data: "153个" },
+      { name: "贵州", location: [26.6466, 106.6302], data: "159个" },
+      { name: "云南", location: [24.8801, 102.8329], data: "145个" },
+      { name: "西藏", location: [31.9686, 89.617], data: "93个" },
+      { name: "陕西", location: [34.3416, 108.9398], data: "91个" },
+      { name: "甘肃", location: [36.0611, 103.8343], data: "83个" },
+      { name: "青海", location: [36.0611, 96.0856], data: "88个" },
+      { name: "宁夏", location: [37.2692, 106.1655], data: "280个" },
+      { name: "新疆", location: [41.1199, 85.1275], data: "140个" },
+      { name: "台湾", location: [23.6978, 120.9605], data: "数据待补充" },
+      { name: "香港", location: [22.3193, 114.1694], data: "数据待补充" },
+      { name: "澳门", location: [22.1987, 113.5439], data: "数据待补充" }
+    ];
+
+    // 添加省份边界 GeoJSON 数据
+    var provinceBoundaries = {
+      "type": "FeatureCollection",
+      "features": [
+        // 这里应该包含每个省份的 GeoJSON 边界数据，可以根据需要导入或手动绘制
+        // 示例: { "type": "Feature", "properties": { "name": "北京" }, "geometry": { "type": "Polygon", "coordinates": [...] } }
+      ]
+    };
+
+    // 添加 GeoJSON 图层
+    var geojsonLayer = L.geoJSON(provinceBoundaries, {
+      style: function (feature) {
+        return {
+          color: "#3388ff", // 边界线颜色
+          weight: 1,
+          fillOpacity: 0.7,
+          fillColor: "#3388ff" // 默认填充颜色
+        };
+      },
+      onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.name);
+        layer.on({
+          mouseover: function (e) {
+            this.setStyle({
+              fillColor: "#1155cc" // 鼠标悬停时的填充颜色
+            });
+          },
+          mouseout: function (e) {
+            geojsonLayer.resetStyle(this);
+          }
+        });
+      }
+    }).addTo(map);
+
+    provincesData.forEach(function(province) {
+      var marker = L.marker(province.location).addTo(map).bindPopup(province.name);
+
+      marker.on('mouseover', function (e) {
+        this.bindPopup(province.data).openPopup();
+      });
+
+      marker.on('mouseout', function (e) {
+        this.bindPopup(province.name);
+      });
+    });
+  </script>
+
+  <div class="hhhcenter">
+    <p>移动鼠标进行查看</p>
+  </div>
+
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section bg-white"></div>
+    <!-- illustrations -->
+    <section id="illustrations" class="process section-padding bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-title3 white">Illustrations</div>
+                    <div class="section-title white">手工类非遗图鉴</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+          <a href="details.html?param=剪纸">
+            <div class="item">
+              <img src="img/非遗窗花.png">
+              <div class="numbb">剪纸</div>
+            </div>
+          </a>
+                </div>
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+          <a href="details.html?param=扎染">
+            <div class="item"> <img src="img/非遗扎染.png">
+              <div class="numbb">扎染</div>
+            </div>
+          </a>
+                </div>
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+          <a href="details.html?param=漆扇">
+            <div class="item"> <img src="img/非遗漆扇.png">
+              <div class="numbb">漆扇</div>
+            </div>
+          </a>
+                </div>
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+          <a href="details.html?param=纸伞">
+            <div class="item"> <img src="img/非遗纸伞.png">
+              <div class="numbb">纸伞</div>
+            </div>
+          </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+          <a href="details.html?param=竹编">
+            <div class="item"> <img src="img/非遗竹编.png">
+              <div class="numbb">竹编</div>
+            </div>
+          </a>
+                </div>
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+          <a href="details.html?param=珐琅">
+            <div class="item"> <img src="img/非遗珐琅.png">
+              <div class="numbb">珐琅</div>
+            </div>
+          </a>
+                </div>
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+          <a href="details.html?param=纸鸢">
+            <div class="item"> <img src="img/非遗纸鸢.png">
+              <div class="numbb">纸鸢</div>
+            </div>
+          </a>
+                </div>
+                <div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+          <a href="details.html?param=香囊">
+            <div class="item"> <img src="img/非遗香囊.png">
+              <div class="numbb">香囊</div>
+            </div>
+          </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+    <!-- Latest news -->
+    <section id="latestnews" class="services1 section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-title3">Latest News</div>
+                    <div class="section-title">最新资讯</div>
+                </div>
+            </div>
+        </div>
+        <div class="full-width">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="post1.html">
+                                <div class="wrap">
+                                    <div class="wrapper-img"> <img src="img/services/1.jpg" class="img-fluid rounded-1"> </div>
+                                    <div class="wrapper-title">
+                                        <h6>3.21</h6>
+                                        <h4>盛世华彩珐琅彩主题文化活动</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="post2.html">
+                                <div class="wrap">
+                                    <div class="wrapper-img"> <img src="img/services/2.jpg" class="img-fluid rounded-1"> </div>
+                                    <div class="wrapper-title">
+                                        <h6>6.10</h6>
+                                        <h4>宁夏：漆艺魂国潮风 漆扇制作体验让非遗“活”起来</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="post3.html">
+                                <div class="wrap">
+                                    <div class="wrapper-img"> <img src="img/services/3.jpg" class="img-fluid rounded-1"> </div>
+                                    <div class="wrapper-title">
+                                        <h6>2024</h6>
+                                        <h4>“中国伞王”迎来油纸伞新生丨匠心</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+    <!-- store -->
+    <section id="store" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-title3">store</div>
+                    <div class="section-title">周边商城</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonials left">
+                        <figure> <img src="img/扎染背景.png" alt="" class="img-fluid rounded-1"> </figure>
+                        <div class="caption testimonials">
+                            <div class="owl-carousel owl-theme">
+                              <a href="商城.html">
+                                <div class="item-box"> <span class="quote"><i class="fa fa-quote-left"></i></span>
+                                    <h4>丰富的非遗手工艺品及DIY材料</h4>
+                                    <p>点击购买，为保护传承非遗做出您的贡献。</p>
+                                    <div class="info">
+                                        <div class="author-img"> <img src="img/尹利萍.jpg" alt=""> </div>
+                                        <div class="cont">
+                                            <h6>尹利萍</h6> <span>一漆成大美，一生专一事。</span>>
+                                        </div>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+    <!-- Team -->
+    <section class="team section-padding bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-title3">Team</div>
+                    <div class="section-title">超绝团队</div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="team-img"><img src="img/team/1.jpg" alt="" class="w-100"></div>
+                            <div class="con">
+                                <h5 class="mb-0"><a href="team-single.html">吴若童<br><span>中传22广告学</span></a></h5>
+                                <div class="arrow"> <a href="team-single.html"><span class="ti-arrow-top-right"></span></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="team-img"> <img src="img/team/2.jpg" alt="" class="w-100"> </div>
+                            <div class="con">
+                                <h5 class="mb-0"><a href="team-single.html">赵敏希<br><span>中传22广告学</span></a></h5>
+                                <div class="arrow"> <a href="team-single.html"><span class="ti-arrow-top-right"></span></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="team-img"> <img src="img/team/3.jpg" alt="" class="w-100"> </div>
+                            <div class="con">
+                                <h5 class="mb-0"><a href="team-single.html">黄钲雯<br><span>中传22广告学</span></a></h5>
+                                <div class="arrow"> <a href="team-single.html"><span class="ti-arrow-top-right"></span></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="team-img"><img src="img/team/4.jpg" alt="" class="w-100"></div>
+                            <div class="con">
+                                <h5 class="mb-0"><a href="team-single.html">彭槿玉<br><span>中传22广告学</span></a></h5>
+                                <div class="arrow"> <a href="team-single.html"><span class="ti-arrow-top-right"></span></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+
+    <!-- Appointment -->
+    <section class="appointment">
+        <div class="background bg-img bg-fixed section-padding pb-0" data-background="img/slider/2.jpg" data-overlay-dark="5">
+            <div class="container">
+                <div class="row">
+                    <!-- Appointment -->
+                    <div class="col-md-5 mb-30 mt-60">
+                        <div class="ready mb-20">
+                            <h5>advice</h5>
+                            <h4>建议通道</h4>
+                            <p>您的宝贵建议是我们进步的动力。</p>
+                        </div>
+                    </div>
+                    <!-- Booking From -->
+                    <div class="col-md-6 offset-md-1">
+                        <div class="booking-box">
+                            <div class="head-box mb-30">
+                                <h4>建议</h4>
+                            </div>
+                            <div class="booking-inner clearfix">
+                                <form class="form1 clearfix">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input1_wrapper">
+                                                <label>填写建议</label>
+                                                <div class="input2_inner">
+                                                    <input type="text" class="form-control input" placeholder="填写建议" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn-form1-submit mt-15">提交</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Clients -->
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="owl-carousel owl-theme">
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/非遗窗花.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/非遗扎染.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/非遗漆扇.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/非遗纸伞.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/非遗竹编.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer clearfix">
+        <div class="container">
+            <!-- first footer -->
+            <div class="first-footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="links dark footer-contact-links">
+                            <div class="footer-contact-links-wrapper">
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="carex-phone-call"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>电话</h6>
+                                        <p>666 666 6666</p>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-links-divider"></div>
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="carex-email"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>邮箱</h6>
+                                        <p>hearit@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-links-divider"></div>
+                                <div class="footer-contact-link-wrapper">
+                                    <div class="image-wrapper footer-contact-link-icon">
+                                        <div class="icon-footer"> <i class="carex-location-map"></i> </div>
+                                    </div>
+                                    <div class="footer-contact-link-content">
+                                        <h6>地址</h6>
+                                        <p>北京市朝阳区定福庄东街1号</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second footer -->
+            <div class="second-footer">
+                <div class="row">
+                    <!-- about & social icons -->
+                    <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <div class="footer-logo"><img src="img/logo-light.png" alt=""></div>
+                            <!-- <div class="footer-logo"><h2>CARE<span>X</span></h2></div> -->
+                            <div class="widget-text">
+                                <p>面向大众的手工类非遗科普及DIY网站。</p>
+                                <div class="social-icons">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- quick links -->
+                    <div class="col-md-3 offset-md-1 widget-area">
+                        <div class="widget clearfix usful-links">
+                            <h3 class="widget-title">快速链接</h3>
+                            <ul>
+                                <li><a href="#introduction">简介</a></li>
+                                <li><a href="#illustrations">图鉴</a></li>
+                                <li><a href="#latestnews">资讯</a></li>
+                                <li><a href="#store">商城</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- subscribe -->
+                    <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <h3 class="widget-title">订阅</h3>
+                            <p>想要及时了解我们的服务吗？注册后我们将通过电子邮件发送通知给您。</p>
+                            <div class="widget-newsletter">
+                                <form action="#">
+                                    <input type="电子邮件" placeholder="填写电子邮件" required>
+                                    <button type="submit">提交</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom footer -->
+            <div class="bottom-footer-text">
+                <div class="row copyright">
+                    <div class="col-md-12">
+                        <p class="mb-0">&copy;2024 By <a href="http://www.bootstrapmb.com">bootstrapMB</a>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.4.1.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/before-after.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
